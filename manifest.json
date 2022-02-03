@@ -10,6 +10,11 @@
       "js": ["lib/jquery-3.6.0.min.js", "dist/schedule.js"],
       "css": ["dist/schedule.css"],
       "matches": ["https://nba.stats.qq.com/schedule/"]
+    },
+    {
+      "js": ["lib/jquery-3.6.0.min.js", "dist/game.js"],
+      "css": ["dist/game.css"],
+      "matches": ["https://kbs.sports.qq.com/kbsweb/game*"]
     }
   ]
 }

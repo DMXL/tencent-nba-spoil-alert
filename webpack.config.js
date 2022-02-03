@@ -5,6 +5,7 @@ module.exports = {
   mode: "production",
   entry: {
     schedule: "./js/schedule.js",
+    game: "./js/game.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),

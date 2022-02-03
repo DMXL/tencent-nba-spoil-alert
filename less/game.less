@@ -1,0 +1,19 @@
+#head-box > .inner.nba > .info > .inner {
+  .spoil-alert-show {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  > .score {
+    opacity: 0;
+  }
+  &.show {
+    > .score {
+      opacity: 1;
+    }
+    .spoil-alert-show {
+      display: none;
+    }
+  }
+}

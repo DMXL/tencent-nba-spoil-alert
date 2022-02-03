@@ -6,12 +6,13 @@ const observer = new MutationObserver(() => {
   ).each(function () {
     if (!$(this).find(".spoil-alert-show").length) {
       $(this).append('<span class="spoil-alert-show">显示比分</span>');
+
+      const showResultButton = $(this).find(".spoil-alert-show");
+      showResultButton.on("click", (e) => {
+        e.stopPropagation();
+        $(this).addClass("show");
+      });
     }
-    const showResultButton = $(this).find(".spoil-alert-show");
-    showResultButton.on("click", (e) => {
-      e.stopPropagation();
-      $(this).addClass("show");
-    });
   });
 });
 
