@@ -1,0 +1,11 @@
+.stream > .item > .list-time > .row.right-win > .goal > span,
+.stream > .item > .list-time > .row.left-win > .goal > span {
+  display: none;
+}
+.stream > .item > .list-time > .row.right-win > .goal > span.spoil-alert-show,
+.stream > .item > .list-time > .row.left-win > .goal > span.spoil-alert-show {
+  display: inline-block;
+}
+
+
+/*# sourceMappingURL=styles.css.map*/

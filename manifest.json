@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+
+  "name": "Tecent NBA Spoil Alert",
+  "version": "1.0.0",
+  "description": "This is a Chrome app to add spoil alerts for game results on Tencent NBA web pages",
+
+  "content_scripts": [
+    {
+      "js": ["lib/jquery-3.6.0.min.js", "dist/index.js"],
+      "css": ["dist/styles.css"],
+      "matches": ["https://nba.stats.qq.com/schedule/"]
+    }
+  ]
+}

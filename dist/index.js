@@ -1,0 +1,2 @@
+(()=>{"use strict";var t=new MutationObserver((function(){$(".stream > .item > .list-time > .row.left-win > .goal, .stream > .item > .list-time > .row.right-win > .goal").each((function(){$(this).find(".spoil-alert-show").length||$(this).append('<span class="spoil-alert-show">显示比分</span>')}))})),e=$(".stream")[0];t.observe(e,{attributes:!0,childList:!0,characterData:!0})})();
+//# sourceMappingURL=index.js.map
