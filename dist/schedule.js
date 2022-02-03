@@ -1,2 +1,2 @@
 (()=>{"use strict";var t=new MutationObserver((function(){$(".stream > .item > .list-time > .row.left-win > .goal, .stream > .item > .list-time > .row.right-win > .goal").each((function(){var t=this;$(this).find(".spoil-alert-show").length||$(this).append('<span class="spoil-alert-show">显示比分</span>'),$(this).find(".spoil-alert-show").on("click",(function(s){s.stopPropagation(),$(t).addClass("show")}))}))})),s=$(".stream")[0];t.observe(s,{attributes:!0,childList:!0,characterData:!0})})();
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=schedule.js.map

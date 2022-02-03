@@ -7,8 +7,8 @@
 
   "content_scripts": [
     {
-      "js": ["lib/jquery-3.6.0.min.js", "dist/index.js"],
-      "css": ["dist/styles.css"],
+      "js": ["lib/jquery-3.6.0.min.js", "dist/schedule.js"],
+      "css": ["dist/schedule.css"],
       "matches": ["https://nba.stats.qq.com/schedule/"]
     }
   ]

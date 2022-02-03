@@ -3,10 +3,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "production",
-  entry: "./js/index.js",
+  entry: {
+    schedule: "./js/schedule.js",
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.js",
+    filename: "[name].js",
+    clean: true,
   },
   module: {
     rules: [
@@ -25,7 +28,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles.css",
+      filename: "[name].css",
     }),
   ],
   devtool: "source-map",

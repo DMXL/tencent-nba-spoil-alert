@@ -1,4 +1,4 @@
-import "../less/index.less";
+import "../less/schedule.less";
 
 const observer = new MutationObserver(() => {
   $(
