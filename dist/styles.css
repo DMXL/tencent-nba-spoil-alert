@@ -6,6 +6,14 @@
 .stream > .item > .list-time > .row.left-win > .goal > span.spoil-alert-show {
   display: inline-block;
 }
+.stream > .item > .list-time > .row.right-win > .goal.show > span,
+.stream > .item > .list-time > .row.left-win > .goal.show > span {
+  display: inline-block;
+}
+.stream > .item > .list-time > .row.right-win > .goal.show > span.spoil-alert-show,
+.stream > .item > .list-time > .row.left-win > .goal.show > span.spoil-alert-show {
+  display: none;
+}
 
 
 /*# sourceMappingURL=styles.css.map*/
