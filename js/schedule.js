@@ -1,18 +1,12 @@
 import '../less/schedule.less';
+const {addShowResultButton} = require('./utils');
 
 const observer = new MutationObserver(() => {
-	$(
-		'.stream > .item > .list-time > .row.left-win > .goal, .stream > .item > .list-time > .row.right-win > .goal',
-	).each(function () {
-		if (!$(this).find('.spoil-alert-show').length) {
-			$(this).append('<span class="spoil-alert-show">显示比分</span>');
+	const rows = $('.stream > .item > .list-time')
+		.find('.left-win > .goal, .right-win > .goal');
 
-			const showResultButton = $(this).find('.spoil-alert-show');
-			showResultButton.on('click', e => {
-				e.stopPropagation();
-				$(this).addClass('show');
-			});
-		}
+	$(rows).each(function () {
+		addShowResultButton($(this), () => $(this).addClass('show'));
 	});
 });
 
