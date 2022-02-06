@@ -1,8 +1,37 @@
+@import "common";
+
+#data-box > .data-left-box > .left-data-tabs {
+  > .kbs-tabs-wrapper {
+    display: none;
+  }
+
+  > .spoil-alert-show {
+    padding-top: 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+
+    &:hover {
+      color: #3a84ff;
+    }
+  }
+
+  &.show {
+    > .kbs-tabs-wrapper {
+      display: block;
+    }
+
+    > .spoil-alert-show {
+      display: none;
+    }
+  }
+}
+
 #head-box > .inner.nba > .info > .inner {
   .spoil-alert-show {
     font-size: 16px;
     color: #fff;
-    cursor: pointer;
   }
 
   > .score {
