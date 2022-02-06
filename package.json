@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is a Chrome app to add spoil alerts for game results on Tencent NBA web pages",
   "scripts": {
-    "test": "concurrently --kill-others \"sh scripts/test.sh\" \"webpack --watch\"",
+    "test": "webpack && concurrently --kill-others \"sh scripts/test.sh\" \"webpack --watch\"",
     "watch": "webpack --watch",
     "build": "webpack",
     "lint": "eslint"
