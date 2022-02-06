@@ -14,7 +14,8 @@
     {
       "js": ["lib/jquery-3.6.0.min.js", "dist/game.js"],
       "css": ["dist/game.css"],
-      "matches": ["https://kbs.sports.qq.com/kbsweb/game*"]
+      "matches": ["https://kbs.sports.qq.com/kbsweb/game*"],
+      "run_at": "document_end"
     }
   ]
 }
