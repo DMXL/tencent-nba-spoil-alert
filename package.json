@@ -1,6 +1,6 @@
 {
   "name": "tencent-nba-spoil-alert",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This is a Chrome app to add spoil alerts for game results on Tencent NBA web pages",
   "scripts": {
     "test": "webpack && concurrently --kill-others \"sh scripts/test.sh\" \"webpack --watch\"",
