@@ -6,7 +6,10 @@ const observer = new MutationObserver(() => {
 		.find('.left-win > .goal, .right-win > .goal');
 
 	$(rows).each(function () {
-		addShowResultButton($(this), () => $(this).addClass('show'));
+		addShowResultButton({
+			container: $(this),
+			onClick: () => $(this).addClass('show'),
+		});
 	});
 });
 
